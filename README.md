@@ -37,7 +37,7 @@ Response
 ```
 ---
 
-**DETE**`/api/notes`
+**DELETE**`/api/notes`
 Delete any note
 
 ```json
