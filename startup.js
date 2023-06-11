@@ -4,7 +4,7 @@ const sql = sqlite3
 
 const db = new sql.Database('./database.db')
 
-db.run(`CREATE TABLE notes (
+db.run(`CREATE TABLE IF NOT EXISTS notes (
     id        INTEGER PRIMARY KEY AUTOINCREMENT,
     title     TEXT,
     content   TEXT,
