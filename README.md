@@ -1,10 +1,11 @@
 #  Notes Api
 
 ---
+## Create new note
 
-**POST**`/api/notes`
-Create new note
+**POST**`/api/notes` 
 
+Request
 ```json
 {
     "title": "Hello",
@@ -12,10 +13,20 @@ Create new note
     "cardcolor":123244
 }
 ```
----
-**GET** `/api/notes`
 
-Get all created notes
+Response
+```json
+{   "id" : 2
+    "title": "Hello",
+    "content": "long content"
+    "cardcolor":123244
+}
+```
+
+---
+## Get all created notes
+
+**GET** `/api/notes`
 
 Response
 
@@ -36,10 +47,43 @@ Response
 ]
 ```
 ---
+## Delete any note
 
 **DELETE**`/api/notes`
-Delete any note
 
+Request
+```json
+{
+    "id": 4,
+    "title": "Hello",
+    "content": "long content"
+    "cardcolor":123244
+}
+```
+Response
+```json
+{
+    "id": 4,
+    "title": "Hello",
+    "content": "long content"
+    "cardcolor":123244
+}
+```
+---
+## Update any note
+
+**PATCH**`/api/notes`
+
+Request
+```json
+{
+    "id": 4,
+    "title": "Hello",
+    "content": "long content"
+    "cardcolor":123244
+}
+```
+Response
 ```json
 {
     "id": 4,
