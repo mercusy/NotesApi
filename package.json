@@ -1,6 +1,6 @@
 { 
   "scripts": {
-    "start": "node -r startup.js app.js"
+    "start": "node -r ./startup.js app.js"
   },
   "type": "module",
   "dependencies": {
